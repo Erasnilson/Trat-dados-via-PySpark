@@ -10,7 +10,7 @@ df = df.withColumnRenamed("Referência","Data").withColumnRenamed("count(Referê
 df.printSchema()
 df = df.toPandas()
 df
-'''
+
 
 # deixar a variavel referencia no mesmo padrao das demais
 from pyspark.sql.functions import *
