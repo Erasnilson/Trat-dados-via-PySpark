@@ -3,13 +3,14 @@ Extração de dados de demanda de voo ANAC via Pyspark
 
 
 Principais comandos utilizados:
-
+'''
 # Renomear as variáveis
 from pyspark.sql.functions import *
 df = df.withColumnRenamed("Referência","Data").withColumnRenamed("count(Referência)","n")
 df.printSchema()
 df = df.toPandas()
 df
+'''
 
 # deixar a variavel referencia no mesmo padrao das demais
 from pyspark.sql.functions import *
